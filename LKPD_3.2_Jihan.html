@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bilangan Genap</title>
+</head>
+<body>
+  <!--Refleksi-->
+  <!--Kapan lebih cocok menggunakan for daripada while?-->
+  <!--for lebih cocok digunakan kalau kita sudah tahu dari awal berapa kali mau ngulang. Contohnya: ngulang dari angka 1 sampai 10, atau ngerjain sesuatu sebanyak 5 kali.
+      while lebih cocok digunakan kalau kita nggak tahu pasti mau ngulang berapa kali, tapi mau terus ngulang selama suatu kondisi belum terpenuhi. Contohnya: minta input dari pengguna sampai jawabannya benar.
+      Jadi, kalau waktu loop-nya jelas pakai for, kalau berdasarkan kondisi yang berubah-ubah, pakai while.-->
+  
+  <!--Apa manfaat perulangan dibanding menulis perintah berulang kali?-->
+  <!--Manfaat perulangan dibanding menulis perintah berulang kali:
+
+      Lebih efisien: Kita gak perlu nulis baris kode yang sama berkali-kali.
+
+      Lebih rapi dan mudah dibaca.
+
+      Lebih fleksibel: Bisa diubah jumlah ulangannya dengan mudah.
+
+      Mengurangi kesalahan: Karena kita gak copy-paste kode berulang.
+
+      Mudah di-maintain: Kalau ada perubahan, cukup ubah di satu tempat.
+
+      Jadi, perulangan bikin program lebih hemat waktu, simpel, dan terhindar dari error.-->
+  <h2>Bilangan Genap dari 2 sampai 20:</h2>
+
+  <!-- Elemen untuk menampilkan hasil -->
+  <p id="output"></p>
+
+  <script>
+    let hasil = "";
+    
+    for (let i = 2; i <= 20; i += 2) {
+      hasil += i + " ";  //tambah angka genap ke hasil
+    }
+
+    document.getElementById("output").innerText = hasil;
+  </script>
+</body>
+</html>

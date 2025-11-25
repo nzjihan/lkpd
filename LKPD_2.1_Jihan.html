@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Cek Kelulusan</title>
+</head>
+<body>
+  <h1>LKPD 2</h1>
+  <script>
+    let nilai = prompt("Masukkan nilai kamu:", "0");
+
+    if (nilai !== null) {
+      nilai = Number(nilai); // konversi ke angka
+
+      if (nilai >= 70) {
+        alert("LULUS");
+      } else {
+        alert("BELUM LULUS");
+      }
+    }
+  </script>
+</body>
+</html>

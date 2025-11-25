@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kategori Usia</title>
+</head>
+<body>
+  <!--Refleksi-->
+  <!--Jelaskan perbedaan antara if dan else if-->
+  <!--✨ Bedanya if, else if, dan else:
+
+if = "Kalau ini terjadi, lakukan ini"
+
+else if = "Kalau tidak, tapi ada kondisi lain, cek yang ini"
+
+else = "Kalau semua kondisi sebelumnya salah, lakukan ini"
+
+
+
+---
+
+🧠 Contoh:
+
+> Kalau nilai bagus → if
+Kalau nilai lumayan → else if
+Kalau nilai jelek → else-->
+  
+  <!--Apa yang terjadi bila semua kondisi salah?
+-->
+  <!--Dalam struktur pengkondisian if, program akan memeriksa setiap syarat secara berurutan. Jika suatu kondisi benar, maka program menjalankan perintahnya dan mengabaikan sisanya. Namun, jika semua kondisi if dan else if salah, maka bagian else akan dijalankan sebagai pilihan terakhir. Else berfungsi sebagai penanganan umum untuk semua kemungkinan di luar kondisi yang telah ditentukan sebelumnya. Tanpa else, program bisa saja tidak melakukan apa pun saat semua kondisi gagal, sehingga else penting untuk memberikan respons yang tetap dan terkontrol.-->
+  <h1>LKPD 2</h1>
+  <script>
+    let usia = prompt("Masukkan usia Anda:", "0");
+
+    if (usia !== null) {
+      usia = Number(usia); // ubah menjadi angka
+
+      if (usia < 13) {
+        alert("Kategori: Anak-anak");
+      } else if (usia >= 13 && usia <= 17) {
+        alert("Kategori: Remaja");
+      } else if (usia >= 18) {
+        alert("Kategori: Dewasa");
+      } else {
+        alert("Usia tidak valid");
+      }
+    }
+  </script>
+</body>
+</html>
